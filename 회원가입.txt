@@ -1,0 +1,16 @@
+- password_hash = hashlib.sha256(password_receive.encode('utf-8')).hexdigest()
+  sha256을 이용한 비밀번호 - 7772d14bf55775bf3c2de5848571b95d6588b86bf513b9972c76ac771bed6e78
+  회원가입 시 DB에 저장되기전 SHA256 암호화를 하여 DB관리자도 볼 수 없게 함
+
+- JWT란?
+    JSON Web Token의 줄임말로, JSON 객체를 사용해 정보를 안정성 있게 전달하는 웹표준
+
+- 토큰/쿠키 에 관한 자료 => https://tansfil.tistory.com/58?category=255594
+      
+- function toggle_sign_up() {
+	$("#sign-up-box").toggleClass("is-hidden")           <- 로그인창에 회원가입 버튼 클릭시 페이지 이동없이 회원가입 할 수 있게 도와주는 코드 (최고다...) 
+	...
+	}
+
+- 기록한건 적지만 이거 외에 정말 많은걸 알았으나... 작은 뇌가 소화하기엔 너무 많았나 보다.. 토큰/쿠키 단어밖에 생각 안난다...
+   인터넷 검색하다 보면 쿠키 많이 주지...
