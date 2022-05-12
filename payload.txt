@@ -24,7 +24,7 @@ sha256 방법(=단방향 암호화. 풀어볼 수 없음)
 - payload = jwt.decode(token_receive, SECRET_KEY, algorithms=['HS256'])
   user_info = db.users.find_one({"username": payload["id"]})                      <------- payload값을 보기 위해선 복호화에 열쇠인 시크릿 키('SPARTA')라는 것을 이용해서 복호화를 한다..
 
-----------
+==============|
 
 로그 아웃 기능을 만들려고 겸사겸사 수업을 들었는데 수업을 다듣고 사용하려하니 내 프로젝트에서 기능을 안해서 이리저리 찾다가
 아래 코드를 안써서 체감상 2시간은 날린거 같다. 한줄 넣고 너무 잘되서 기분이 허탈했다...
