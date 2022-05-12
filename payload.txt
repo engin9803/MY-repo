@@ -1,6 +1,8 @@
-	HTML HEAD부분		<--- JS --->
+HTML <HEAD>		
+			<--- JS --->
 - <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
-
+</HEAD>
+	       
 - function sign_out() {
             $.removeCookie('mytoken', {path: '/'});   
             alert('로그아웃!')				<---- 위 상단 스크립트가 없을 시 작동 안함						
