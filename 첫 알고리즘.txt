@@ -14,22 +14,22 @@ a	b	return
 
 ( 1 ) ===========================
 ```
-function solution(a, b) {
-    var answer = 0;
+    function solution(a, b) {
+        var answer = 0;
         
-        if(a>=b){
-            for(let i=b; i<=a; i++){
-                answer += i;
+            if(a>=b){
+                for(let i=b; i<=a; i++){
+                    answer += i;
+                }
+            }else if(a<=b){
+                for(let j=a; j<=b; j++){
+                    answer += j;
+                }
+            }else{
+                answer = a || b;
             }
-        }else if(a<=b){
-            for(let j=a; j<=b; j++){
-                answer += j;
-            }
-        }else{
-            answer = a || b;
-        }
-    return answer;
-}
+        return answer;
+    }
 ```
 ( 1 ) ==========================
 
