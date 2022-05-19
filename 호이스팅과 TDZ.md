@@ -66,17 +66,17 @@ const enchovy = function() {
     호출 스택이란 프로그램에서 우리가 어디에 있는지를 기본적으로 기록하는 데이터 구조이며 동작 방식은 다음과 같다.  
     함수를 실행하면 해당 함수의 기록을 스택 맨 위에 추가(Push) 후 우리가 함수를 결과 값을 반환하면 스택에 쌓여있던 함수는 제거(Pop)가 된다.
     ```js
-    function multiply(x, y) {
-    return x * y;
+    function multiply(x, y) {   // Stap 1, 2
+    return x * y;               // Stap 2를 값을 구하고 반환
     }
-    function printSquare(x) {
-    var s = multiply(x, x);
-    console.log(s);
+    function printSquare(x) {    
+    var s = multiply(x, x);     
+    console.log(s);             // Stap 1, 3
     }
-    printSquare(5);
+    printSquare(5);         //  Stap 1  // Stap 4
     ```
     엔진이 이 코드를 실행하기 전에는 호출 스택이 비어있습니다. 가장 아랫줄에 printSquare 함수가 실행되면 이후 단계는 다음과 같습니다  
-    (https://t1.daumcdn.net/cfile/tistory/9995544C5C32151627)  
+    <img width="1000" alt="9995544C5C32151627" src="https://user-images.githubusercontent.com/74358273/169210296-fb2faef0-9e62-427b-a203-9b77d969e997.png">  
     호출 스택의 각 항목을 스택 프레임이라고 합니다.
 - ## 스코프 체인, 변수 은닉화
 - 스코프 체인
